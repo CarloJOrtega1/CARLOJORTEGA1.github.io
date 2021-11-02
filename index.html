@@ -576,7 +576,7 @@ function buttonClickGalaxy(){
 });
 }
 
-$(window).ready(function () {
+	$(window).ready(function () {
   
             $("form").submit(function (e) {
                 e.preventDefault();
@@ -584,8 +584,10 @@ $(window).ready(function () {
 		analytics.track('Form Submitted', {
 		email: emailSubmit
             });
-	    }
+            })
+  
         })
+
 
 </script>	
 </body>
