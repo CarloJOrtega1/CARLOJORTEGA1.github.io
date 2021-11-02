@@ -581,9 +581,9 @@ $(window).ready(function () {
             $("form").submit(function (e) {
                 e.preventDefault();
                 var emailSubmit = $('form').serializeArray()[0].value;
-	//	analytics.track('Form Submitted', {
-	//	email: emailSubmit
-          //  });
+		analytics.track('Form Submitted', {
+		email: emailSubmit
+            });
 	    }
         })
 
