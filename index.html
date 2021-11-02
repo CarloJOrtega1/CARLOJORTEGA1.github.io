@@ -581,18 +581,11 @@ $(window).ready(function () {
             $("form").submit(function (e) {
                 e.preventDefault();
                 var emailSubmit = $('form').serializeArray()[0].value;
-                /*setTimeout(function () {
-                    console.log("After timeout");
-                    $('form').serializeArray()[0].value;
-                }, 100); */
-		    analytics.track('Form Submitted', {
-			email: emailSubmit
-            });
+	//	analytics.track('Form Submitted', {
+	//	email: emailSubmit
+          //  });
   
         })
-
-	
-
 
 </script>	
 </body>
