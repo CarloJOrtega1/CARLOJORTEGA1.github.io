@@ -125,7 +125,7 @@
         <li><a href="#">Explore</a></li>
       </ul>
     </div>
-    <div class="right"><a class="button blue gradient" href="#">Profile</a><a class="button green gradient" onClick="buttonClick()" href="#">Get App</a></div>
+    <div class="right"><a class="button blue gradient" href="#">Profile</a><a class="button green gradient" onClick="buttonClickGetApp()" href="#">Get App</a></div>
   </div>
   <div class="sections compact hidden">
     <div class="left"><a href="#" title="Slides Framework"><svg style="width:82px;height:24px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a></div>
@@ -439,7 +439,7 @@
                   <li class="opacity-7">24/7 Customer Support</li>
                 </ul>
               </div>
-              <a href="#" class="button blue gradient wide cropSides cropBottom ae-7" onClick="buttonClick()">Try Free</a>
+              <a href="#" class="button blue gradient wide cropSides cropBottom ae-7" onClick="buttonClickMoon()">Try Free</a>
             </li>
             <li class="col-4-12 ae-4">
               <h3>Planet</h3>
@@ -456,7 +456,7 @@
                   <li class="opacity-8">24/7 Customer Support</li>
                 </ul>
               </div>
-              <a href="#" class="button green gradient wide cropSides cropBottom ae-8" onClick="buttonClick()">Purchase</a>
+              <a href="#" class="button green gradient wide cropSides cropBottom ae-8" onClick="buttonClickPlanet()">Purchase</a>
             </li>
             <li class="col-4-12 ae-5">
               <h3>Galaxy</h3>
@@ -474,7 +474,7 @@
                   <li class="opacity-8">24/7 Customer Support</li>
                 </ul>
               </div>
-              <a href="#" class="button green gradient wide cropSides cropBottom ae-9" onClick="buttonClick()">Purchase</a>
+              <a href="#" class="button green gradient wide cropSides cropBottom ae-9" onClick="buttonClickGalaxy()">Purchase</a>
             </li>
           </ul>
         </div> 
@@ -542,9 +542,40 @@
 <div class="progress-bar blue"></div>
 	  
 <script type="text/javascript">
-function buttonClick(){
+function buttonClickGetApp(){
+  
 	analytics.track('Button Clicked', {
  	 label: 'get_app'
+});
+}
+</script>
+	 
+function buttonClickMoon(){
+  
+	analytics.track('Button Clicked', {
+ 	 label: 'purchase',
+	 pricing_option: 'Moon',
+	 price: 0
+});
+}
+</script>
+
+function buttonClickPlanet(){
+  
+	analytics.track('Button Clicked', {
+ 	 label: 'purchase',
+	 pricing_option: 'Planet',
+	 price: 6
+});
+}
+</script>
+
+function buttonClickGalaxy(){
+  
+	analytics.track('Button Clicked', {
+ 	 label: 'purchase',
+	 pricing_option: 'Galaxy',
+	 price: 24
 });
 }
 </script>
