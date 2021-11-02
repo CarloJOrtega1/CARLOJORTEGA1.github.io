@@ -8,6 +8,15 @@
   }}();
 </script>
 	
+	button type="button" onclick="buttonClick(event)">Get App</button>
+	<script>
+	function buttonClick(event){
+	analytics.track('Button Clicked', {
+ 	 label: 'get_app'
+	});
+	}
+	</script>
+	
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
 	<meta name="apple-mobile-web-app-capable" content="yes" />
