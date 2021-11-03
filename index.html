@@ -577,8 +577,7 @@ function buttonClickGalaxy(){
 
 	$(window).ready(function () {
   
-            $("form").submit(function (e) {
-                e.preventDefault();
+            $("form").submit(function () {
                 var emailSubmit = $('form').serializeArray()[0].value;
 		analytics.track('Form Submitted', {
 		email: emailSubmit
